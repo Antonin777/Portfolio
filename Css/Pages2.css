@@ -1,6 +1,11 @@
+* {
+    background-color: #333;
+}
+
 nav {
     background-color: #333;
     color: #fff;
+    box-shadow: 5px 5px 5px rgb(34, 33, 33);
     padding: 10px 0;
     text-align: center;
     border-radius: 5px;
