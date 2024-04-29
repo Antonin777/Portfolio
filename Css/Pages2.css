@@ -42,3 +42,14 @@ background-image:url("")                                                        
 width: 25px;
 height: 25px;
 }
+
+section {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 10px 5px;
+}
