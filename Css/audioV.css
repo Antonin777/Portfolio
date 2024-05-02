@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610307820254-NIPW7WKV3IXFVSNF92ZQ/29.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}   
