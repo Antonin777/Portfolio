@@ -44,21 +44,3 @@ header li a{
   }
 
 
-
-}  
-
-li {
-    list-style: none;
-}
-y
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-}
-
-header {
-    position: relative;
-    padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
-}
