@@ -1,10 +1,23 @@
 @import url("./reset.css");
 :root {
+    --root-font-size: 18px ;
+
+    --yellow: #f8ef02;
+    --cyan: #00ffd2;
+    --red: #ff003c;
+    --blue: #136377;
+    --green: #446d44;
+    --purple: purple;
+    --black: #000;
+    --white: #fff;
+    --dark: #333;
+
     --theme-bg-color: #000;
     --theme-letter-color: white;
-    --theme-bg-header: #2d3436;
+    --theme-bg-header: #262a2b;
     --theme-color-letter-default: black;
     --theme-bg-list: rgba(71, 203, 226, 0.555);
+    
 }
 
 *{

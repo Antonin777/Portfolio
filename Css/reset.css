@@ -14,7 +14,7 @@ body{
 *{
     box-sizing: border-box;
     scrollbar-width: thin;
-    scrollbar-color: rgb(38, 100, 235) black;
+    scrollbar-color: rgb(41, 41, 43) black;
     margin: 0;
     padding: 0;
     list-style: none;
