@@ -68,25 +68,22 @@ body {
     font-family: 'BlenderPro-Book', sans-serif;
     font-weight: 500;
     font-style: normal;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
     background-color: var(--yellow);
+    
     
 }   
 
 .logo a{
     color: var(--theme-letter-color);
-    padding: 5px;
+    padding: 1rem;
   
 }
 
-header li a{
-  color: var(--white);
-  padding: 5px;
-}
-
 .header {
-    height: 50px;
+    height: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -97,11 +94,16 @@ header li a{
     white-space: nowrap;
 }
 
-.header_mobile {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+header li a{
+  color: var(--white);
+  padding: 5rem;
+}
+ 
+.heade_mobile {
+    height: 2rem;
+    width: 2rem;
     display: flex;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     background-color: var(--dark);
@@ -115,8 +117,8 @@ header li a{
 }
 
 .header_mobile svg{
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     stroke: var(--white);
 }
 
@@ -140,8 +142,8 @@ header li a{
     top: 0;
     z-index: 2;
     left: 0;
-    width: 280px;
-    height: calc(100vh + 20px);
+    width: 20rem;
+    height: calc(100vh + 4rem);
     background-color: var(--black);
     padding: 30px 15px;
     display: flex;
@@ -162,8 +164,8 @@ header li a{
 }
 
 .nav-mobile__profil img {
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -220,7 +222,7 @@ header li a{
 
 .nav-mobile__menu li a svg {
     stroke: var(--white);
-    width: 18px;
+    width: 2rem;
     height: 18px;
     margin-right: 10px;
 }
@@ -251,8 +253,8 @@ header li a{
     opacity: 1;
 }
 
-/* logo réseau */
-/* .nav-mobile__social li a svg {
+/* logo réseau 
+ .nav-mobile__social li a svg {
     stroke: var(--white);
     width: 18px;
     height: 18px;
@@ -361,7 +363,7 @@ header li a{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0.5rem;
     background: var(--button-shadow-primary);
     text-shadow: 2px 2px var(--button-shadow-primary), -2px -2px var(--button-shadow-secondary);
     clip-path: var(--button-clip);
@@ -551,12 +553,20 @@ header li a{
     filter: brightness(90%);
 }
 
-h1.title1 {
-    font-size: 2rem;
-    margin: 2rem 4.5rem;
-    width: 100%;
-}
 
-.title1 {
-    display: block;
-}
+/* si la taille de l'écran est 601px ou plus, mettre la police du texte de la classe a 2rem */
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 2rem;
+        margin: 2rem 4.5rem;
+        width: 100%;
+    }
+  } 
+  /* si la taille de l'écran est 600px ou moins, mettre la police du texte de la classe a 1.5rem*/
+  @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+        margin: 2rem 3rem;
+        width: 100%;
+    }
+  }
