@@ -4,9 +4,8 @@
     background-color: #333;
 }
 
-h1 {
-    font-size: 30px;
-    padding: 10px 5px;
+body {
+    overflow: scroll;
 }
 
 .header {
@@ -27,8 +26,8 @@ header li a{
   }
 
 .header_mobile {
-    height: 2rem;
-    width: 2rem;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -213,3 +212,28 @@ header li a{
   height: 20px;
   stroke: var(--white);
 }
+
+.title1 {
+    color: white;
+    font-size: 4rem;
+    padding: 5rem 5rem;
+    z-index: 0; 
+}
+
+.bloc {
+    color: white;
+    display: inline-flex;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid;
+}
+
+
+.bloc-img-dev {
+    
+}
+
+
+
+
