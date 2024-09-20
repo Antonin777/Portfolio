@@ -1,6 +1,6 @@
 html{
-    font-size: 62.5%;/* 16 px mult 62,5% = 10 rem*/
-    
+    font-size: 62.5%;/* 16 px mult 62,5% = 10 rem*/  
+    font-style: none;
 }
 
 :root {
@@ -62,6 +62,7 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-size: none;
 }
 /* webkit */
 *::-webkit-scrollbar{

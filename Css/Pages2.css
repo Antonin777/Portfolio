@@ -1,4 +1,15 @@
 @import url("./reset.css");
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('BlenderPro-Medium.eot');
+    src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
+        url('BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BlenderPro-Medium.woff2') format('woff2'),
+        url('BlenderPro-Medium.woff') format('woff'),
+        url('BlenderPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 * {
     background-color: #333;
@@ -181,7 +192,6 @@ header li a{
     margin: 3rem 3rem;
 } 
 
-
 .nav-mobile__closed {
   height: 40px;
   width: 40px;
@@ -215,9 +225,11 @@ header li a{
 .title1 {
     color: white;
     font-size: 4rem;
-    padding: 5rem 5rem;
+    text-align: center;
     z-index: 0; 
 }
+
+/*
 
 .bloc {
     color: white;
@@ -268,3 +280,5 @@ body main ul li a {
     background-image: url("/Asset/Fond\ d\'écran.png");
     content: "design-degital";
 }
+
+*/
