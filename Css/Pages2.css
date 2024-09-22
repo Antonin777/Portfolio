@@ -1,12 +1,28 @@
 @import url("./reset.css");
 
 * {
+    margin: 0;
+    padding: 0;
     background-color: #333;
+
+}
+
+html {
+    font-size: var(--root-font-size);
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    overflow: scroll;
-}
+    height: 10Ovh;
+    font-family: 'BlenderPro-Book', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--dark);
+}   
 
 .header {
     height: 3rem;
@@ -15,7 +31,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: var(--black);
+    background-color: var(--white);
     box-shadow: var(--dark);
     white-space: nowrap;
 }
@@ -54,22 +70,23 @@ header li a{
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     display:none;
     z-index: 1;
-  }
+}
 
 .mobile-overlay.active{
     display: block;
 }
 
 .nav-mobile {
+    color: none;
     position: fixed;
     top: 0;
     z-index: 2;
     left: 0;
-    width: 20rem;
-    height: calc(100vh + 4rem);
+    width: 15rem;
+    height: calc(100vh + 1rem);
     background-color: rgba(128, 125, 125, 0.4);
     padding: 30px 15px;
     display: flex;
@@ -106,10 +123,10 @@ header li a{
 
 .nav-mobile__menu{
     padding: 1%;
-    margin: 1%;
+    margin: 5%;
     list-style: none;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 
 .nav-mobile__menu li {
@@ -123,12 +140,13 @@ header li a{
 .nav-mobile__menu li a {
     color: var(--white);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     display: inline-flex;
     align-items: center;
     font-weight: bold;
     position: relative;
 }
+
 /* mise en place de la ligne blanche lors du passage de la souris */
 .nav-mobile__menu li a::after {
     content: '' ;
@@ -146,6 +164,7 @@ header li a{
   left: 0;
 }
 
+
 .nav-mobile__menu li a svg {
     stroke: var(--white);
     width: 2rem;
@@ -155,19 +174,21 @@ header li a{
 
 .nav-mobile__social {
     padding: 0;
-    margin: 2rem ;
-    list-style: none;
-    display: inline-block;
+    margin:  0 ;
+    color: none;
+    list-style: none ;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 
-.nav-mobile__social li {
-    margin: 1px 8px;
+.nav-mobile__social li  {
+    margin: 0px 8px;
 }
 
 .nav-mobile__social li a {
-    color: var(--white);
+
+    font-size: 11px;
     opacity: 0.6;
     text-transform: uppercase;
     transition: 0.3s opacity ease-in-out;
@@ -175,10 +196,14 @@ header li a{
 
 /* logo réseau */
 .nav-mobile__social li a svg {
-    color: var(--white);
+    stroke: var(--white);
     width: 3rem;
-    height: 3rem;
-    margin: 3rem 3rem;
+    height: 60px;
+    margin-top: 12rem;
+} 
+
+.nav-mobile__social li a:hover::after {
+    opacity: 0.4;
 } 
 
 .nav-mobile__closed {
@@ -207,9 +232,6 @@ header li a{
   stroke: var(--white);
 }
 
-.nav-mobile__social li a:hover {
-    opacity: 1;
-}
 
 .title1 {
     color: white;
@@ -220,56 +242,21 @@ header li a{
 
 
 
-/*
 
-.bloc {
-    color: white;
-    display: inline-flex;
-    font-size: 2rem;
-    padding: 2rem;
-    text-align: center;
-    border: 2px solid;
-}
 
-body main ul li {
-    color: beige;
-    background-color: var(--bgcolor-header);
-    line-height: 35rem;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    width: calc(100% / 5 - 1rem);
-    height: 40rem;
-    margin: 2rem 2rem 4.5rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
 
-body main ul li a {
-    z-index: 3;
-    text-decoration: none;
-    color: var(--white);
-}
 
-#reseau{
-    background-image: url("/Asset/semi\ réalistic\,\ with\ a\ futurist\ paysage\ and\ theme\ is\ cybersecurite-1716544095980.jpg");
-    content: "Réseau";
-}
 
-#dev{
-    background-image: url("/Asset/dev.jpg");
-    content: "Développement";
-}
 
-#IA{
-    background-image: url("/Asset/science-fiction-cityscape-futuristic-city-digital-art-4k-xd-1920x1080.jpg");
-    content: "IA";
-}
 
-#Design-digital{
-    background-image: url("/Asset/Fond\ d\'écran.png");
-    content: "design-degital";
-}
 
-*/
+
+
+
+
+
+
+
+
+
+
