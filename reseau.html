@@ -8,20 +8,69 @@
     <link rel="stylesheet" href="./Css/réseau.css">
     <title>Portfolio</title>
 </head>
+ 
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        z-index: -1;
+    }
+
+</style>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-            <a href="#" style="text-decoration: none;" >Portfolio</a> 
-        </div>
-        <ul class="links">
-            <li><a href="./Pages2.html" style="text-decoration: none;">Accueil</a></li>
-            <li><a href="./reseau.html" style="text-decoration: none;">Réseau</a></li>
-            <li><a href="./audio-visuel.html" style="text-decoration: none;">Audio-Visuel</a></li>
-            <li><a href="./dev.html" style="text-decoration: none;">Développement</a></li>
-            <li><a href="./design.html" style="text-decoration: none;">Design</a></li>
-            <li><a href="./a-propo.html" style="text-decoration: none;">à propos de moi</a></li>
-        </ul>    
-        </div>
-    </header>  
+    <canvas id="canvas" style="background: #111;"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var W = window.innerWidth;
+        var H = window.innerHeight;
+
+        canvas.width = W;
+        canvas.height = H;
+
+        var fontSize = 16;
+        var columns = Math.floor(W / fontSize);
+        var drops = [];
+        for(var i=0; i<columns; i++) {
+            drops.push(0);
+        }
+    var str = "JavaScript Hacking Effect";
+    function draw(){
+        context.fillStyle = "rgba(0,0,0,0.05)";
+        context.fillRect(0, 0, W, H);
+        context.fontSize = "700 " + fontSize + "px";
+        context.fillStyle = "#00cc33";
+        for(var i=0; i<columns; i++){
+            var reseau = Math.floor(Math.random()*str.length);
+            var x = i * fontSize;
+            var y = drops[i] * fontSize;
+            context.fillText(str[reseau], x, y);
+            if(y >= canvas.height && Math.random() > 0.99){
+                drops[1] = 0;
+            }
+            drops[i]++;
+        }
+    }
+    draw();
+    setInterval(draw, 45);
+
+</script>
+
 </body>
+
+
+<main>
+    <div class="navbar">
+        <div class="logo">
+        <a href="#" style="text-decoration: none;" >Portfolio</a> 
+    </div>
+    <ul class="links">
+        <li><a href="./Pages2.html" style="text-decoration: none;">Accueil</a></li>
+        <li><a href="./reseau.html" style="text-decoration: none;">Réseau</a></li>
+        <li><a href="./audio-visuel.html" style="text-decoration: none;">Audio-Visuel</a></li>
+        <li><a href="./dev.html" style="text-decoration: none;">Développement</a></li>
+        <li><a href="./design.html" style="text-decoration: none;">Design</a></li>
+        <li><a href="./a-propo.html" style="text-decoration: none;">à propos de moi</a></li>
+    </ul>    
+</div>
+</main> 
