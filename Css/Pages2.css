@@ -52,7 +52,9 @@ header li a{
     cursor: pointer;
     transition: 0.4s; 
     transform: linear;   
+
 }
+
 
 .header_mobile:hover{
     transform: rotate(-90deg);
@@ -73,6 +75,7 @@ header li a{
     background-color: rgba(255, 255, 255, 0.4);
     display:none;
     z-index: 1;
+
 }
 
 .mobile-overlay.active{
@@ -94,6 +97,7 @@ header li a{
     justify-content: space-between;
     transform: translateX(-105%);
     transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
+    overflow: scroll;
 }
 
 .nav-mobile.active {
@@ -160,8 +164,8 @@ header li a{
 }
 
 .nav-mobile__menu li a:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 
@@ -188,7 +192,7 @@ header li a{
 
 .nav-mobile__social li a {
 
-    font-size: 11px;
+    font-size: 10px;
     opacity: 0.6;
     text-transform: uppercase;
     transition: 0.3s opacity ease-in-out;
@@ -196,7 +200,7 @@ header li a{
 
 /* logo réseau */
 .nav-mobile__social li a svg {
-    stroke: var(--white);
+    color: white;
     width: 3rem;
     height: 60px;
     margin-top: 12rem;
