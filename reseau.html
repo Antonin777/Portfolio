@@ -13,27 +13,27 @@
     *{
         margin: 0%;
         padding: 0%;
-        z-index: -1;
+
     }
 
 </style>
 <body>
     <canvas id="canvas" style="background: #111;"></canvas>
     <script>
-        var canvas = document.getElementById('canvas');
-        var context = canvas.getContext('2d');
-        var W = window.innerWidth;
-        var H = window.innerHeight;
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    var W = window.innerWidth;
+    var H = window.innerHeight;
 
-        canvas.width = W;
-        canvas.height = H;
+    canvas.width = W;
+    canvas.height = H;
 
-        var fontSize = 16;
-        var columns = Math.floor(W / fontSize);
-        var drops = [];
-        for(var i=0; i<columns; i++) {
+    var fontSize = 10;
+    var columns = Math.floor(W / fontSize);
+    var drops = [];
+    for(var i=0; i<columns; i++) {
             drops.push(0);
-        }
+    }
     var str = "JavaScript Hacking Effect";
     function draw(){
         context.fillStyle = "rgba(0,0,0,0.05)";
@@ -46,7 +46,7 @@
             var y = drops[i] * fontSize;
             context.fillText(str[reseau], x, y);
             if(y >= canvas.height && Math.random() > 0.99){
-                drops[1] = 0;
+                drops[i] = 0;
             }
             drops[i]++;
         }
@@ -73,4 +73,5 @@
         <li><a href="./a-propo.html" style="text-decoration: none;">à propos de moi</a></li>
     </ul>    
 </div>
+
 </main> 
