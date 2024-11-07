@@ -50,7 +50,6 @@ body{
     margin: 0;
     letter-spacing: .1rem; /* 1px*/
     line-height: 1.6;
-    /* background-color: var(--theme-bg-color); */
     overflow: hidden;
 }
 

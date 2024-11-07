@@ -3,14 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #333;
-
 }
 
 html {
     font-size: var(--root-font-size);
     padding: 0;
     margin: 0;
+    color: var(--dark);
 }
 
 body {
@@ -22,7 +21,32 @@ body {
     background-size: cover;
     background-position: center;
     background-color: var(--dark);
-}   
+}
+
+@media (prefers-color-scheme: light ){
+    body {
+        background-color: var(--white);
+        color: var(--dark);
+    }
+    .header_mobile svg {
+        background-color: var(--white);
+        color: var(--dark);
+    }
+}
+
+@media (prefers-color-scheme: dark ){
+    body {
+        background-color: var(--dark);
+        color: var(--white);
+    }
+    .header_mobile svg {
+        background-color: var(--dark);
+        color: var(--white);
+    }
+}
+
+
+/* menu deroulant/menu burger */
 
 .header {
     height: 3rem;
@@ -36,10 +60,14 @@ body {
     white-space: nowrap;
 }
 
+/* gestion des section les un en dessou des autres  */
+
 header li a{
     color: var(--white);
     padding: 5rem;
   }
+
+/* centrer le menu burger et l'attacher avec le js */
 
 .header_mobile {
     height: 4rem;
@@ -48,7 +76,6 @@ header li a{
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark);
     cursor: pointer;
     transition: 0.4s; 
     transform: linear;   
@@ -60,10 +87,10 @@ header li a{
     transform: rotate(-90deg);
 }
 
+
 .header_mobile svg{
     width: 2rem;
     height: 2rem;
-    stroke: var(--white);
 }
 
 .mobile-overlay {
@@ -75,12 +102,13 @@ header li a{
     background-color: rgba(255, 255, 255, 0.4);
     display:none;
     z-index: 1;
-
 }
 
 .mobile-overlay.active{
     display: block;
 }
+
+/* initialisation du display ça taille et ces limites */
 
 .nav-mobile {
     color: none;
@@ -97,7 +125,7 @@ header li a{
     justify-content: space-between;
     transform: translateX(-105%);
     transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .nav-mobile.active {
@@ -125,11 +153,13 @@ header li a{
     
 }
 
+ /** background gris top **/
+
 .nav-mobile__menu{
     padding: 1%;
     margin: 5%;
     list-style: none;
-    margin-top: 24px;
+    margin-top: 2.3rem;
     margin-bottom: 15px;
 }
 
@@ -191,7 +221,6 @@ header li a{
 }
 
 .nav-mobile__social li a {
-
     font-size: 10px;
     opacity: 0.6;
     text-transform: uppercase;
