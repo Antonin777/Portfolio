@@ -3,14 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #333;
-
 }
 
 html {
   font-size: var(--root-font-size);
   padding: 0;
   margin: 0;
+  color: var(--dark);
 }
 
 body {
@@ -18,10 +17,10 @@ body {
   font-family: 'BlenderPro-Book', sans-serif;
   font-weight: 500;
   font-style: normal;
-  overflow:scroll;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-color: tra;
+  background-color: var(--dark);
 }   
 
 .header {
@@ -55,7 +54,6 @@ header li a{
 
 }
 
-
 .header_mobile:hover{
   transform: rotate(-90deg);
 }
@@ -63,7 +61,6 @@ header li a{
 .header_mobile svg{
   width: 2rem;
   height: 2rem;
-  stroke: var(--white);
 }
 
 .mobile-overlay {
@@ -97,7 +94,7 @@ header li a{
   justify-content: space-between;
   transform: translateX(-105%);
   transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .nav-mobile.active {
@@ -211,29 +208,29 @@ header li a{
 } 
 
 .nav-mobile__closed {
-height: 40px;
-width: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: var(--dark);
-cursor: pointer;
-transition: 0.4s; transform: linear;
-position: absolute;
-z-index: 3;
-top: 5px;
-left: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+  cursor: pointer;
+  transition: 0.4s; transform: linear;
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  left: 10px;
 }
 
 .nav-mobile__closed:hover{
-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .nav-mobile__closed svg{
-width: 20px;
-height: 20px;
-stroke: var(--white);
+  width: 20px;
+  height: 20px;
+  stroke: var(--white);
 }
 
 

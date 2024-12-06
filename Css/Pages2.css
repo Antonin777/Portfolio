@@ -67,10 +67,10 @@ header li a{
     padding: 5rem;
   }
 
-/* centrer le menu burger et l'attacher avec le js */
 
+/* centrer le menu burger et l'attacher avec le js */
 .header_mobile {
-    height: 4rem;
+    height: 5rem;
     width: 4rem;
     display: flex;
     border-radius: 50%;
@@ -78,21 +78,22 @@ header li a{
     justify-content: center;
     cursor: pointer;
     transition: 0.4s; 
-    transform: linear;   
+    transform: linear;
 
 }
 
-
+/* Rotation du burger a partir de son centre  */
 .header_mobile:hover{
     transform: rotate(-90deg);
 }
 
-
+/* Taille du svg Burger */
 .header_mobile svg{
     width: 2rem;
     height: 2rem;
 }
 
+/* Parametrage de l'overlay active, sa position, ça limite, ça couleur et ça position  */
 .mobile-overlay {
     position: fixed;
     top: 0;
@@ -104,12 +105,12 @@ header li a{
     z-index: 1;
 }
 
+/* determine les limite de la "box" */
 .mobile-overlay.active{
     display: block;
 }
 
 /* initialisation du display ça taille et ces limites */
-
 .nav-mobile {
     color: none;
     position: fixed;
@@ -126,16 +127,28 @@ header li a{
     transform: translateX(-105%);
     transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
     overflow: hidden;
+  
 }
+
 
 .nav-mobile.active {
-    transform: initial;
+    transform: initial; 
 }
 
+.top {
+    background-color: var(--dark);
+    border-radius: 5% 5% 0% 0%;
+}
+
+.Bottom {
+    background-color: var(--dark);
+    border-radius: 0% 0% 5% 5%;
+}
 .nav-mobile__profil {
     text-align: center;
     border-bottom: 1px solid var(--white);
     padding: 15px;
+    
 }
 
 .nav-mobile__profil img {
@@ -143,6 +156,7 @@ header li a{
     height: 5rem;
     border-radius: 50%;
     object-fit: cover;
+    
 }
 
 .nav-mobile__profil .name {
@@ -161,10 +175,12 @@ header li a{
     list-style: none;
     margin-top: 2.3rem;
     margin-bottom: 15px;
+
 }
 
 .nav-mobile__menu li {
     margin-bottom: 8px;
+    
 }
 
 .nav-mobile__menu li:last-of-type{
@@ -191,6 +207,7 @@ header li a{
     bottom: -6px;
     right: 0;
     transition: 0.3s width ease-in-out;
+    
 }
 
 .nav-mobile__menu li a:hover::after {
@@ -251,8 +268,8 @@ header li a{
   transition: 0.4s; transform: linear;
   position: absolute;
   z-index: 3;
-  top: 5px;
-  left: 10px;
+  top: 1.7rem;
+  left: 1rem;
 }
 
 .nav-mobile__closed:hover{
@@ -265,31 +282,9 @@ header li a{
   stroke: var(--white);
 }
 
-
 .title1 {
     color: white;
     font-size: 4rem;
     text-align: center;
     z-index: 0; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
