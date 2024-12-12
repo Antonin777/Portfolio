@@ -57,7 +57,7 @@ header li a{
     background-color: var(--dark);
     cursor: pointer;
     transition: 0.4s; 
-    transform: linear;   
+    transform: initial;
 
 }
 
@@ -88,7 +88,7 @@ header li a{
 }
 
 .nav-mobile {
-    color: none;
+    color: initial;
     position: fixed;
     top: 0;
     z-index: 2;

@@ -4,6 +4,9 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  display: flex;
+}
 h1,
 h2 {
   margin: 0;
@@ -375,7 +378,7 @@ section {
 
 @keyframes movement {
   0% {
-    top: 0px;
+    top: 0;
     left: -20px;
   }
 
