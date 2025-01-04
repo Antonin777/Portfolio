@@ -1,10 +1,5 @@
 @import url("./reset.css");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-size: var(--root-font-size);
   padding: 0;
@@ -21,7 +16,32 @@ body {
   background-size: cover;
   background-position: center;
   background-color: var(--dark);
-}   
+}
+
+@media (prefers-color-scheme: light ){
+  body {
+    background-color: var(--white);
+    color: var(--dark);
+  }
+  .header_mobile svg {
+    background-color: var(--white);
+    color: var(--dark);
+  }
+}
+
+@media (prefers-color-scheme: dark ){
+  body {
+    background-color: var(--dark);
+    color: var(--white);
+  }
+  .header_mobile svg {
+    background-color: var(--dark);
+    color: var(--white);
+  }
+}
+
+
+/* menu déroulant/menu burger */
 
 .header {
   height: 3rem;
@@ -35,34 +55,40 @@ body {
   white-space: nowrap;
 }
 
+/* gestion des section les un en dessous des autres  */
+
 header li a{
   color: var(--white);
   padding: 5rem;
 }
 
+
+/* centrer le menu burger et l'attacher avec le js */
 .header_mobile {
-  height: 4rem;
+  height: 5rem;
   width: 4rem;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark);
   cursor: pointer;
-  transition: 0.4s; 
-  transform: linear;   
+  transition: 0.4s;
+  transform: initial;
 
 }
 
+/* Rotation du burger a partir de son centre  */
 .header_mobile:hover{
   transform: rotate(-90deg);
 }
 
+/* Taille du svg Burger */
 .header_mobile svg{
   width: 2rem;
   height: 2rem;
 }
 
+/* Paramétrage de l overlay active, sa position, ça limite, ça couleur et ça position  */
 .mobile-overlay {
   position: fixed;
   top: 0;
@@ -72,20 +98,16 @@ header li a{
   background-color: rgba(255, 255, 255, 0.4);
   display:none;
   z-index: 1;
-
 }
 
+/* determine les limite de la "box" */
 .mobile-overlay.active{
   display: block;
 }
 
+/* initialisation du display ça taille et ces limites */
 .nav-mobile {
-  color: none;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  left: 0;
-  width: 15rem;
+  color: transparent;
   height: calc(100vh + 1rem);
   background-color: rgba(128, 125, 125, 0.4);
   padding: 30px 15px;
@@ -95,12 +117,29 @@ header li a{
   transform: translateX(-105%);
   transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
   overflow: hidden;
+  position: fixed;
+}
+
+.nav-mobile {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 15rem;
 }
 
 .nav-mobile.active {
   transform: initial;
 }
 
+.top {
+  background-color: var(--dark);
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.Bottom {
+  background-color: var(--dark);
+  border-radius: 1rem 1rem 1rem 1rem;
+}
 .nav-mobile__profil {
   text-align: center;
   border-bottom: 1px solid var(--white);
@@ -112,26 +151,29 @@ header li a{
   height: 5rem;
   border-radius: 50%;
   object-fit: cover;
+
 }
 
 .nav-mobile__profil .name {
   color: var(--white);
   font-size: 18px;
   display: block;
-  margin: 6px 0px;
-  
+  margin: 6px 0;
+
 }
+
+/** background gris top **/
 
 .nav-mobile__menu{
   padding: 1%;
-  margin: 5%;
   list-style: none;
-  margin-top: 24px;
-  margin-bottom: 15px;
+  margin: 2.3rem 5% 15px;
+
 }
 
 .nav-mobile__menu li {
   margin-bottom: 8px;
+
 }
 
 .nav-mobile__menu li:last-of-type{
@@ -152,12 +194,13 @@ header li a{
 .nav-mobile__menu li a::after {
   content: '' ;
   height: 1px;
-  width: 0px;
+  width: 0;
   background-color: var(--white);
   position: absolute;
   bottom: -6px;
   right: 0;
   transition: 0.3s width ease-in-out;
+
 }
 
 .nav-mobile__menu li a:hover::after {
@@ -176,19 +219,18 @@ header li a{
 .nav-mobile__social {
   padding: 0;
   margin:  0 ;
-  color: none;
+  color: initial;
   list-style: none ;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .nav-mobile__social li  {
-  margin: 0px 8px;
+  margin: 8px;
 }
 
 .nav-mobile__social li a {
-
   font-size: 10px;
   opacity: 0.6;
   text-transform: uppercase;
@@ -200,12 +242,12 @@ header li a{
   color: white;
   width: 3rem;
   height: 60px;
-  margin-top: 12rem;
-} 
+  margin-top: 1rem;
+}
 
 .nav-mobile__social li a:hover::after {
   opacity: 0.4;
-} 
+}
 
 .nav-mobile__closed {
   height: 40px;
@@ -216,11 +258,11 @@ header li a{
   justify-content: center;
   background-color: var(--dark);
   cursor: pointer;
-  transition: 0.4s; transform: linear;
+  transition: 0.4s; transform: initial;
   position: absolute;
   z-index: 3;
-  top: 5px;
-  left: 10px;
+  top: 1.7rem;
+  left: 1rem;
 }
 
 .nav-mobile__closed:hover{
@@ -233,23 +275,9 @@ header li a{
   stroke: var(--white);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.title1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  z-index: 0;
+}
