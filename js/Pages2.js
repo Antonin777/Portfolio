@@ -56,3 +56,30 @@ document.addEventListener("mousemove", (event) => {
         letter.style.transform = `translate(0, ${Math.min(dist / 10, 10)}px) scale(${scale})`;
     });
 });
+
+const video = document.querySelector('.intro_videoPlaceholder__Ooimu video');
+
+if (video) {
+
+    document.addEventListener('mousemove', (event) => {
+        const mouseX = event.clientX /
+            window.innerWidth;
+        const mouseY = event.clientY /
+            window.innerHeight;
+
+
+        const translateX = (mouseX - 0.5) * 20;
+        const translateY = (mouseY - 0.5) * 20;
+
+
+        const blur = mouseY * 10;
+        const brightness = 1 + mouseX * 0.5;
+
+
+        video.style.transform = `translate(${translateX}px, ${translateY}px) blur(${blur}px) brightness(${brightness})`;
+        video.style.filter = `blur(${blur}px) brightness(${brightness})`;
+
+    });
+} else {
+    console.error('no video');
+}

@@ -378,7 +378,30 @@ header li a{
 }
 
 .intro_subTitle__yPgDF h2 {
-    margin: 0;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--white);
+}
+
+.intro_subTitle__yPgDF h2::before,
+.intro_subTitle__yPgDF h2::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: var(--white);
+    position: absolute;
+}
+
+.intro_subTitle__yPgDF h2::before {
+    top: -10px;
+    left: 25%;
+}
+
+.intro_subTitle__yPgDF h2::after {
+    bottom: -10px;
+    right: 25%;
 }
 
 /* Espace réservé pour la vidéo */
@@ -388,19 +411,61 @@ header li a{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    object-fit: cover;
     background: url('/Asset/Vidéo/vidéo-background.mp4') no-repeat center center;
-    background-size: cover;
+    transition: filter 0.1s ease, transform 0.1s ease;
 }
 
 .Mes_projects {
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--white);
 }
 
-.TriggerText_wrapper {
-    display: flex;
-    justify-content: flex-start;
-    white-space: nowrap;
+.Newpost_item__12345 {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.Newpost-item__12345:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
+}
+
+.newpost_title__56789 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.newpost_excerpt__abcd {
+    font-size: 1rem;
+    margin: 0 0 15px;
+}
+
+.newpost_link__efgh {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.newpost_link__efgh:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+
+
+
 
 
