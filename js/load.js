@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Simulation de chargement
     const interval = setInterval(() => {
-        progress += 5;
+        progress += 1;
         progressText.textContent = `${progress}%`;
 
         if (progress >= 100) {
@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 loader.style.visibility = "hidden";
             }, 500); // Masque le loader après 0,5 seconde
         }
-    }, 200);
+    }, 30);
 });

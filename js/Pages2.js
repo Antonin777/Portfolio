@@ -57,7 +57,8 @@ document.addEventListener("mousemove", (event) => {
     });
 });
 
-const video = document.querySelector('.intro_videoPlaceholder__Ooimu video');
+const video = document.createAttribute('intro_videoPlaceholder__Ooimu');
+console.log(video);
 
 if (video) {
 
@@ -76,7 +77,7 @@ if (video) {
         const brightness = 1 + mouseX * 0.5;
 
 
-        video.style.transform = `translate(${translateX}px, ${translateY}px) blur(${blur}px) brightness(${brightness})`;
+        video.style.transform = `translate(${translateX}px, ${translateY}px)`;
         video.style.filter = `blur(${blur}px) brightness(${brightness})`;
 
     });
