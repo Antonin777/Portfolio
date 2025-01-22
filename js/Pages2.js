@@ -57,7 +57,7 @@ document.addEventListener("mousemove", (event) => {
     });
 });
 
-const video = document.createAttribute('intro_videoPlaceholder__Ooimu');
+const video = document.createAttribute('intro_videoPlaceholder__Ooimu video');
 console.log(video);
 
 if (video) {
