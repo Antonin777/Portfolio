@@ -20,22 +20,18 @@ html{
     --bg: transparent;
     --ac: var(--black);
 
-    --yellow-cyberpunk-font: #feef00;
-    --cyan-cyberpunk-font1:#46dffb;
-    --cyan-cyberpunk-font2:#45aefb;
-
     --banner-color1: var(--purple); 
     --banner-color2: var(--red);
     --banner-color3: var(--yellow); 
     --banner-color4: var(--cyan); 
     --banner-gradient-stop: 405px;
 
-    --input-padding-top: 0px;
+    --input-padding-top: 0;
     --input-padding-bot: 0.2rem;
     --input-padding-left: 1rem;
     --input-padding-right: 2rem;
     --input-font-size: 1.2rem;
-    --input-width: 240px;
+    --input-width: 150rem;
 
     --checkbox-size: 28px;
     --checkbox-inner-size: 16px;

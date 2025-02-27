@@ -46,7 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
     background-color: var(--white);
     white-space: nowrap;
 }
@@ -95,6 +95,7 @@ header li a{
     height: 100vh;
     display:none;
     z-index: 6;
+
 }
 
 /* determine les limite de la "box" */
@@ -106,8 +107,8 @@ header li a{
 .nav-mobile {
     color: transparent;
     height: calc(100vh + 1rem);
-    background-color: rgba(128, 125, 125, 0.4);
-    padding: 30px 15px;
+    background-color: rgba(128, 125, 125, 0.9);
+    padding: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,8 +140,8 @@ header li a{
 }
 .nav-mobile__profil {
     text-align: center;
-    border-bottom: 1px solid var(--white);
-    padding: 15px;
+    border-bottom: 0.1rem solid var(--white);
+    padding: 1.5rem;
 }
 
 .nav-mobile__profil img {
@@ -153,9 +154,9 @@ header li a{
 
 .nav-mobile__profil .name {
     color: var(--white);
-    font-size: 18px;
+    font-size: 1.5rem;
     display: block;
-    margin: 6px 0;
+    margin: 0.6rem 0;
     
 }
 
@@ -164,12 +165,12 @@ header li a{
 .nav-mobile__menu{
     padding: 1%;
     list-style: none;
-    margin: 2.3rem 5% 15px;
+    margin: 2.3rem 5% 1rem;
 
 }
 
 .nav-mobile__menu li {
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
     
 }
 
@@ -180,7 +181,7 @@ header li a{
 .nav-mobile__menu li a {
     color: var(--white);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     font-weight: bold;
@@ -190,11 +191,11 @@ header li a{
 /* mise en place de la ligne blanche lors du passage de la souris */
 .nav-mobile__menu li a::after {
     content: '' ;
-    height: 1px;
+    height: 0.2rem;
     width: 0;
     background-color: var(--white);
     position: absolute;
-    bottom: -6px;
+    bottom: -0.6rem;
     right: 0;
     transition: 0.3s width ease-in-out;
     
@@ -209,13 +210,13 @@ header li a{
 .nav-mobile__menu li a svg {
     stroke: var(--white);
     width: 2rem;
-    height: 18px;
-    margin-right: 10px;
+    height: 1.8rem;
+    margin-right: 1rem;
 }
 
 .nav-mobile__social {
     padding: 0;
-    margin:  0 ;
+    margin:  0;
     color: initial;
     list-style: none ;
     display: flex;
@@ -224,11 +225,11 @@ header li a{
 }
 
 .nav-mobile__social li  {
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 .nav-mobile__social li a {
-    font-size: 10px;
+    font-size: 1rem;
     opacity: 0.6;
     text-transform: uppercase;
     transition: 0.3s opacity ease-in-out;
@@ -238,7 +239,7 @@ header li a{
 .nav-mobile__social li a svg {
     color: white;
     width: 3rem;
-    height: 60px;
+    height: 2rem;
     margin-top: 1rem;
 } 
 
@@ -247,8 +248,8 @@ header li a{
 } 
 
 .nav-mobile__closed {
-  height: 40px;
-  width: 40px;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -258,7 +259,7 @@ header li a{
   transition: 0.4s; transform: initial;
   position: absolute;
   z-index: 3;
-  top: 1.7rem;
+  top: 2rem;
   left: 1rem;
 }
 
@@ -267,20 +268,9 @@ header li a{
 }
 
 .nav-mobile__closed svg{
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   stroke: var(--white);
-}
-
-/* Conteneur principal */
-.intro_wrapper__EX7g8 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
 /* Conteneur intérieur */
@@ -297,7 +287,7 @@ header li a{
     width: 100%;
     background-color: rgba(0,0,0,0.8);
     color: var(--white);
-    padding: 20px 0;
+    padding: 1rem 0;
     Z-index: 3;
 
 }
@@ -373,14 +363,14 @@ header li a{
 /* Sous-titre */
 .intro_subTitle__yPgDF {
     font-size: 1.5rem;
-    color: #fff;
-    margin-top: 10px;
+    color: var(--white);
+    margin-top: 1rem;
 }
 
 .intro_subTitle__yPgDF h2 {
     position: relative;
     text-align: center;
-    margin: 20px 0;
+    margin: 2rem 0;
     color: var(--white);
 }
 
@@ -388,64 +378,77 @@ header li a{
 .intro_subTitle__yPgDF h2::after {
     content: '';
     display: block;
-    height: 1px;
+    height: 0.1rem;
     width: 50%;
     background-color: var(--white);
     position: absolute;
 }
 
 .intro_subTitle__yPgDF h2::before {
-    top: -10px;
+    top: -1rem;
     left: 25%;
 }
 
 .intro_subTitle__yPgDF h2::after {
-    bottom: -10px;
+    bottom: -1rem;
     right: 25%;
 }
 
-/* Espace réservé pour la vidéo */
-.intro_videoPlaceholder__Ooimu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background: url('/Asset/Vidéo/vidéo-background.mp4') no-repeat center center;
-    transition: filter 0.1s ease, transform 0.1s ease;
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.presentation h1 {
+    font-size: 2rem;
+    font-variant-caps: all-petite-caps;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.presentation p {
+    font-size: 1.2rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .Mes_projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 1rem;
+    padding: 2rem;
     background-color: var(--white);
+
 }
 
 .Newpost_item__12345 {
     background-color: var(--black);
     color: var(--white);
-    padding: 15px;
-    border-radius: 8px;
-    width: calc(33.33% - 20px);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    width: calc(33.33% - 2rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .Newpost-item__12345:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
 }
 
 .newpost_title__56789 {
     font-size: 1.5rem;
-    margin: 0 0 10px;
+    margin: 0 0 1rem;
 }
 
 .newpost_excerpt__abcd {
     font-size: 1rem;
-    margin: 0 0 15px;
+    margin: 0 0 1.5rem;
 }
 
 .newpost_link__efgh {
@@ -453,8 +456,8 @@ header li a{
     text-decoration: none;
     color: var(--white);
     background-color: transparent;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
     transition: background-color 0.3s ease;
 }
 
@@ -474,7 +477,14 @@ header li a{
     }
 }
 
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: var(--black);
+    color: var(--white);
+}
 
 
 

@@ -379,27 +379,27 @@ section {
 @keyframes movement {
   0% {
     top: 0;
-    left: -20px;
+    left: -2rem;
   }
 
   15% {
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
   }
 
   60% {
-    top: 5px;
-    left: -10px;
+    top: 0.5rem;
+    left: -1rem;
   }
 
   75% {
-    top: -5px;
-    left: 20px;
+    top: -0.5rem;
+    left: 2rem;
   }
 
   100% {
-    top: 10px;
-    left: 5px;
+    top: 1rem;
+    left: 0.5rem;
   }
 }
 
@@ -450,7 +450,7 @@ section {
   0% {
     font-weight: 100;
     color: #e0287d;
-    filter: blur(3px);
+    filter: blur(0.3rem);
   }
 
   20% {
@@ -462,7 +462,7 @@ section {
   50% {
     font-weight: 300;
     color: #1bc7fb;
-    filter: blur(2px);
+    filter: blur(0.2rem);
   }
 
   60% {
@@ -474,7 +474,7 @@ section {
   90% {
     font-weight: 500;
     color: #e0287d;
-    filter: blur(6px);
+    filter: blur(0.6rem);
   }
 }
 
@@ -502,7 +502,7 @@ section {
 
 .hero-container {
   position: relative;
-  padding: 200px 0;
+  padding: 15rem 0;
   text-align: center;
 }
 
@@ -513,7 +513,7 @@ section {
   right: 0;
   bottom: 0;
   opacity: 0.5;
-  filter: blur(5px);
+  filter: blur(0.5rem);
   background: url(https://images5.alphacoders.com/133/1338166.png)
     center no-repeat;
   background-size: cover;
@@ -540,8 +540,8 @@ section {
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #fff;
   border-radius: 50%;
   animation: bounce 1.5s infinite ease-in-out;
@@ -558,12 +558,12 @@ section {
 /* Texte de progression */
 .progress-number {
   position: absolute;
-  bottom: 20px;
+  bottom: 2rem;
   text-align: center;
 }
 
 #progress-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   font-weight: bold;
   margin: 0;
