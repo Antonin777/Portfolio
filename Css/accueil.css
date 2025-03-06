@@ -426,7 +426,7 @@ header li a{
 
 }
 
-.Newpost_item__12345 {
+.Newpost_item__1 {
     background-color: var(--black);
     color: var(--white);
     padding: 2rem;
@@ -436,7 +436,37 @@ header li a{
 
 }
 
-.Newpost-item__12345:hover {
+.Newpost-item__1:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
+}
+
+.Newpost_item__2 {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    width: calc(33.33% - 2rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.Newpost-item__2:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
+}
+
+.Newpost_item__3 {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    width: calc(33.33% - 2rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.Newpost-item__3:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
 }
