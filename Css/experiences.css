@@ -440,33 +440,25 @@ header li a{
     transform: translateY(-0.5rem);
     box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
 }
-#popup {
+
+.popup {
     position: fixed;
     top: 50%;
-    border-radius: 0.8rem;
     left: 50%;
-    color: var(--black);
     transform: translate(-50%, -50%);
     background: var(--white);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: none; /* Caché par défaut */
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
-}
-
-/* Fond noir semi-transparent derrière la popup */
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     display: none; /* Caché par défaut */
-    z-index: 999;
+    color: var(--black);
+    font-size: 4rem;
+    text-align: center;
+    width: 75%;
+    border-radius: 0.8rem;
 }
 
-.Mes_projects button {
+.btn-lire {
     border: none;
     background: none;
     color: var(--white);
@@ -475,7 +467,7 @@ header li a{
     outline: none;
 }
 
-.Mes_projects button:hover {
+.btn-lire:hover {
     border: none;
     border-radius: 0.2rem;
     background: white;
@@ -486,9 +478,24 @@ header li a{
     transition: background-color 0.3s ease;
 }
 
-#close {
+.close {
+    border: none;
+    background: none;
     color: var(--black);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
 
+.close:hover {
+    border: none;
+    border-radius: 0.2rem;
+    background: black;
+    color: var(--white);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
 .newpost_title__56789 {
@@ -514,4 +521,13 @@ header li a{
 .newpost_link__efgh:hover {
     background-color: var(--white);
     color: var(--black);
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
 }

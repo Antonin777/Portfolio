@@ -420,48 +420,128 @@ header li a{
 .Mes_projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     padding: 2rem;
     background-color: var(--white);
 
 }
 
-.Newpost_item__12345 {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem;
-    border-radius: 0.8rem;
-    width: calc(33.33% - 2rem);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+.wave-wrapper{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #EFF1F6;
 }
 
-.Newpost-item__12345:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
+.comp1{
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    color: var(--dark);
 }
 
-.newpost_title__56789 {
-    font-size: 1.5rem;
-    margin: 0 0 1rem;
+
+.wave1{
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--blue);
+    border-radius: 35%;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &.one{
+        animation-duration: 7000ms;
+        opacity: 0.4;
+    }
+
+    &.two{
+        background-color: var(--black);
+        animation-duration: 9000ms;
+    }
+    &.three{
+        animation-duration: 12000ms;
+    }
 }
 
-.newpost_excerpt__abcd {
-    font-size: 1rem;
-    margin: 0 0 1.5rem;
+@keyframes wave {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
-.newpost_link__efgh {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--white);
-    background-color: transparent;
-    padding: 1rem 1.5rem;
-    border-radius: 0.4rem;
-    transition: background-color 0.3s ease;
+.wave2{
+    position: absolute;
+    top: 20%;
+    left: -50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--blue);
+    border-radius: 35%;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &.one{
+        animation-duration: 7000ms;
+        opacity: 0.4;
+    }
+
+    &.two{
+        background-color: var(--black);
+        animation-duration: 9000ms;
+    }
+    &.three{
+        animation-duration: 12000ms;
+    }
 }
 
-.newpost_link__efgh:hover {
-    background-color: var(--white);
-    color: var(--black);
+@keyframes wave {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.wave3{
+    position: absolute;
+    top: 40%;
+    left: -50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--blue);
+    border-radius: 35%;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &.one{
+        animation-duration: 7000ms;
+        opacity: 0.4;
+    }
+
+    &.two{
+        background-color: var(--black);
+        animation-duration: 9000ms;
+    }
+    &.three{
+        animation-duration: 12000ms;
+    }
+}
+
+@keyframes wave {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

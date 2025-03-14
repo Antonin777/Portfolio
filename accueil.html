@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/Pages2.js"></script>
+    <script src="./js/popup.js"></script>
     <script src="./js/Menu-burger.js"></script>
     <link rel="stylesheet" href="./Css/accueil.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-
-    <header>
+<header>
     <div class="header_mobile" onclick="toggleMenu()">
             
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
     </div> 
 
-    </header> 
+</header>
 
     <div class="mobile-overlay">
     <nav class="nav-mobile">
@@ -93,9 +93,10 @@
                   </svg>
                 Design
                 </a>
-            </li>
-            -->
-            <li><a href="./a-propo.html" >
+            </li> -->
+
+            <li>
+                <a href="./a-propo.html" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                   </svg>                      
@@ -179,26 +180,50 @@
 
             <div class="Mes_projects">
 
-                <div class="Newpost_item__1">
-                   <h2 class="newpost_title__56789">Mes projects recent</h2>
-                    <p class="newpost_excerpt__abcd">Texte de l'article</p>
-                    <a href="#"
-                       class="newpost_link__efgh">lire plus</a>
-                </div>
-
-                <div class="Newpost_item__2">
+                <div class="Newpost_item__12345">
                     <h2 class="newpost_title__56789">Ma veille technologique</h2>
-                    <p class="newpost_excerpt__abcd">Une veille technologique qui a pour thème, l'apparition de l'IA dans différents domaines informatiques.
-                        Du gaming, au hardware en passant par l'art et l'espace.</p>
-                    <a href="#"
-                       class="newpost_link__efgh">lire plus</a>
+                    <p class="newpost_excerpt__abcd">L'implémentation et l'évlution de L'IA dans divers domaines informatique (D.A.O, Espace, Jeux vidéo)</p>
+                    <button class="btn-lire" data-popup="popup1">Lire plus</button>
                 </div>
 
-                <div class="Newpost_item__3">
+                <div id="popup1" class="popup">
+                    <h1>Mon parcours professionnel</h1>
+                    <br>
+                    <p> entreprises en tant que ouvrier.</p>
+                    <p>Cette année ma permis de prendre conscience de se que je voulais faire et de ma passion que j'ai avec l'informatique en génerale </p>
+                    <button class="close">Fermer</button>
+                </div>
+
+                <div class="Newpost_item__12345">
+                    <h2 class="newpost_title__56789">Itic Paris</h2>
+                    <p class="newpost_excerpt__abcd">Pour l'obtention de mon BTS SIO option SISR, à L'itic en 2025.
+                        J'ai pu approfondir, mes connaissances en informatique et plus précisement en réseau/ system.</p>
+                    <button class="btn-lire" data-popup="popup2">Lire plus</button>
+                </div>
+
+                <div id="popup2" class="popup">
+                    <h1>Mon </h1>
+                    <br>
+                    <p>
+                        tesst</p>
+                    <p>Cette année ma permis de prendre conscience de se que je voulais faire et de ma passion que j'ai avec l'informatique en génerale </p>
+                    <button class="close">Fermer</button>
+                </div>
+
+                <div class="Newpost_item__12345">
                     <h2 class="newpost_title__56789">Mes projects d'école</h2>
                     <p class="newpost_excerpt__abcd">Texte de l'article</p>
-                    <a href="#"
-                       class="newpost_link__efgh">lire plus</a>
+                    <button class="btn-lire" data-popup="popup3">Lire plus</button>
+                </div>
+
+                <div id="popup3" class="popup">
+                    <h1>Mon parcours professionnel</h1>
+                    <br>
+                    <p>J’ai débuté avec un Bac Général option S.E.S et NSI, qui m’a permis d’acquérir des bases en Informatique.
+                        Après mon bac je voulais partir en étude de design, modélisation 3D ou D.A.O ayant pas été accepté par ces école j'ai fait une année de cesure,
+                        ou j'ai travaillé dans différentes entreprises en tant que ouvrier.</p>
+                    <p>Cette année ma permis de prendre conscience de se que je voulais faire et de ma passion que j'ai avec l'informatique en génerale </p>
+                    <button class="close">Fermer</button>
                 </div>
 
             </div>
@@ -208,8 +233,7 @@
     </main>
 <footer>
     <p>&copy; - AM - <time datetime="2024-06-18">2024</time></p>
-</footer>
 
-    
+</footer>
 </body>
 </html>
