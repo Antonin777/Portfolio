@@ -99,7 +99,7 @@ header li a{
 }
 
 /* determine les limite de la "box" */
-.mobile-overlay.active{
+.mobile-overlay.active {
     display: block;
 }
 
@@ -426,7 +426,18 @@ header li a{
     background-color: var(--white);
 
 }
+.theme1 {
+    display: flex;
+    position: relative;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
+}
 
+.theme1 h1{
+    color: var(--black);
+}
 .wave-wrapper{
     position: relative;
     height: 10rem;
@@ -434,6 +445,8 @@ header li a{
     overflow: hidden;
     border-radius: 50%;
     background-color: #EFF1F6;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .comp1{
@@ -441,8 +454,12 @@ header li a{
     text-transform: uppercase;
     justify-content: center;
     color: var(--dark);
+    z-index: 1000;
 }
 
+.comp1 h1{
+    z-index: 100;
+}
 
 .wave1{
     position: absolute;
@@ -478,6 +495,14 @@ header li a{
     }
 }
 
+.titre h1{
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
+    z-index: 100;
+}
+
 .wave2{
     position: absolute;
     top: 20%;
@@ -510,6 +535,14 @@ header li a{
     100%{
         transform: rotate(360deg);
     }
+}
+
+.comp3{
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    color: var(--dark);
+    z-index: 100;
 }
 
 .wave3{
