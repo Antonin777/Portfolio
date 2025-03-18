@@ -426,6 +426,7 @@ header li a{
     background-color: var(--white);
 
 }
+
 .theme1 {
     display: flex;
     position: relative;
@@ -449,21 +450,9 @@ header li a{
     margin: 1rem;
 }
 
-.comp1{
-    text-align: center;
-    text-transform: uppercase;
-    justify-content: center;
-    color: var(--dark);
-    z-index: 1000;
-}
-
-.comp1 h1{
-    z-index: 100;
-}
-
 .wave1{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: -50%;
     width: 20rem;
     height: 20rem;
@@ -476,7 +465,6 @@ header li a{
         animation-duration: 7000ms;
         opacity: 0.4;
     }
-
     &.two{
         background-color: var(--black);
         animation-duration: 9000ms;
@@ -495,12 +483,25 @@ header li a{
     }
 }
 
-.titre h1{
+.wave-wrapper h1{
     position: absolute;
+    padding: 2rem;
+    /*margin: 1rem;*/
     text-align: center;
     text-transform: uppercase;
     color: var(--black);
     z-index: 100;
+}
+
+.wave-wrapper p{
+    position: absolute;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
+    z-index: 100;
+
 }
 
 .wave2{
@@ -528,26 +529,9 @@ header li a{
     }
 }
 
-@keyframes wave {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.comp3{
-    text-align: center;
-    text-transform: uppercase;
-    justify-content: center;
-    color: var(--dark);
-    z-index: 100;
-}
-
 .wave3{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: -50%;
     width: 20rem;
     height: 20rem;
@@ -570,11 +554,53 @@ header li a{
     }
 }
 
-@keyframes wave {
-    0%{
-        transform: rotate(0deg);
+.wave4{
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--blue);
+    border-radius: 35%;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &.one{
+        animation-duration: 7000ms;
+        opacity: 0.4;
     }
-    100%{
-        transform: rotate(360deg);
+
+    &.two{
+        background-color: var(--black);
+        animation-duration: 9000ms;
+    }
+    &.three{
+        animation-duration: 12000ms;
     }
 }
+
+.wave5{
+    position: absolute;
+    top: 20%;
+    left: -50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--blue);
+    border-radius: 35%;
+    animation-name: wave;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &.one{
+        animation-duration: 7000ms;
+        opacity: 0.4;
+    }
+
+    &.two{
+        background-color: var(--black);
+        animation-duration: 9000ms;
+    }
+    &.three{
+        animation-duration: 12000ms;
+    }
+}
+
