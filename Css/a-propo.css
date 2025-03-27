@@ -423,7 +423,6 @@ header li a{
     gap: 1rem;
     padding: 2rem;
     background-color: var(--white);
-
 }
 
 .Newpost_item__12345 {
@@ -433,7 +432,6 @@ header li a{
     border-radius: 0.8rem;
     width: calc(33.33% - 2rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .Newpost-item__12345:hover {
@@ -441,9 +439,71 @@ header li a{
     box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Caché par défaut */
+    color: var(--black);
+    font-size: 4rem;
+    text-align: center;
+    width: 75%;
+    border-radius: 0.8rem;
+}
+
+.btn-lire {
+    border: none;
+    background: none;
+    color: var(--white);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-lire:hover {
+    border: none;
+    border-radius: 0.2rem;
+    background: white;
+    color: var(--black);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.close {
+    border: none;
+    background: none;
+    color: var(--black);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.close:hover {
+    border: none;
+    border-radius: 0.2rem;
+    background: black;
+    color: var(--white);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
 .newpost_title__56789 {
     font-size: 1.5rem;
     margin: 0 0 1rem;
+}
+
+.newpost_excerpt__abcd {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
 }
 
 .newpost_excerpt__abcd {
