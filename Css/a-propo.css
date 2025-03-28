@@ -454,6 +454,12 @@ header li a{
     text-align: center;
     width: 75%;
     border-radius: 0.8rem;
+    overflow: visible;
+}
+
+.popup h2{
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .btn-lire {

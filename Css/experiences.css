@@ -458,6 +458,11 @@ header li a{
     border-radius: 0.8rem;
 }
 
+.popup h2{
+    margin: 2rem;
+    text-align: left;
+}
+
 .btn-lire {
     border: none;
     background: none;
@@ -521,6 +526,12 @@ header li a{
 .newpost_link__efgh:hover {
     background-color: var(--white);
     color: var(--black);
+}
+
+.popup ul li{
+    list-style-type: bullet;
+    margin-left: 2rem;
+    text-align: left;
 }
 
 footer {
