@@ -496,6 +496,17 @@ header li a{
     transition: background-color 0.3s ease;
 }
 
+.post1{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.post1:hover {
+    color: var(--white);
+
+}
+
 .newpost_title__56789 {
     font-size: 1.5rem;
     margin: 0 0 1rem;
