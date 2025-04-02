@@ -423,7 +423,14 @@ header li a{
   gap: 1rem;
   padding: 2rem;
   background-color: var(--white);
+}
 
+.E6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
 }
 
 .Newpost_item__12345 {
