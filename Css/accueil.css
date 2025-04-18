@@ -425,6 +425,19 @@ header li a{
     background-color: var(--white);
 }
 
+.post1:link {
+    cursor: pointer;
+    color: var(--black);
+    z-index: 1;
+}
+
+.post1:hover {
+    cursor: pointer;
+    height: 0.5rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+
 .Newpost_item__12345 {
     background-color: var(--black);
     color: var(--white);
