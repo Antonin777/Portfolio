@@ -413,11 +413,25 @@ header li a{
 .presentation p {
   font-size: 1.2rem;
   color: var(--black);
-  text-align: center;
   margin-bottom: 1rem;
 }
 
+.Projects h2 {
+  background-color: var(--white);
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: 2rem;
+}
+
 .Mes_projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+.Mes_projects2 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -440,7 +454,6 @@ header li a{
   border-radius: 0.8rem;
   width: calc(33.33% - 2rem);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .Newpost-item__12345:hover {
