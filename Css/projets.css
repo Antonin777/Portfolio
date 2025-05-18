@@ -502,6 +502,32 @@ header li a{
   text-align: left;
 }
 
+.Mes_projects3 {
+  display: block;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.Mes_projects3 h1 {
+  background-color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.Mes_projects3 h2 {
+  background-color: var(--white);
+  font-size: 1.5rem;
+  color: var(--black);
+  text-align: left;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+
 .btn-lire {
   border: none;
   background: none;
@@ -602,3 +628,4 @@ header li a{
   background-color: var(--white);
   color: var(--black);
 }
+
