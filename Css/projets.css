@@ -412,6 +412,7 @@ header li a{
   border-radius: 0.8rem;
   width: calc(33.33% - 2rem);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.2), 0 0.6rem 0.6rem rgba(0,0,0,0.2);
 }
 
 .Newpost-item__12345:hover {
@@ -436,8 +437,68 @@ header li a{
   border-radius: 0.8rem;
 }
 
+.popup h1{
+  margin: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .popup h2{
   margin: 2rem;
+  text-align: left;
+}
+
+.Mes_projects ul{
+  list-style: none;
+ }
+
+.Mes_projects ul li::before{
+  content: "•";
+  color: var(--black);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+ }
+
+.Mes_projects ul li{
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.Mes_projects2 ul{
+  list-style: none;
+}
+
+.Mes_projects2 ul li::before{
+  content: "•";
+  color: var(--black);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.Mes_projects2 ul li{
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.E6 ul{
+  list-style: none;
+}
+
+.E6 ul li::before{
+  content: "•";
+  color: var(--black);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.E6 ul li{
+  margin-bottom: 1rem;
   text-align: left;
 }
 
