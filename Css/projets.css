@@ -514,6 +514,7 @@ header li a{
   border-radius: 0.2rem;
   background: var(--white);
   color: var(--black);
+  box-shadow: var(--black) 0 0 1rem 0.2rem;
 }
 
 .newpost_title__56789 {

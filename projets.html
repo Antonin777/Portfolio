@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/Menu-burger.js"></script>
     <script src="js/reseau-script.js"></script>
+    <script src="js/pdf.js"></script>
     <script src="./js/popup.js"></script>
     <link rel="stylesheet" href="Css/projets.css">
     <title>Portfolio</title>
@@ -196,7 +197,8 @@
 
                 <div class="pdf-buttons">
 
-                    <button class="view-pdf">
+                    <button class="view-pdf" onclick="viewPDF('/PDF/Compte rendu - Transfert FSMO antonin M')">
+                        <a href="/PDF/Compte%20rendu%20-%20Transfert%20FSMO%20antonin%20M.pdf"></a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                              stroke-width="2" width="20" height="20">
                             <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
@@ -205,7 +207,7 @@
                         Voir le PDF
                     </button>
 
-                    <button class="download-pdf">
+                    <button class="download-pdf" onclick="downloadPDF()">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                              stroke-width="2" width="20" height="20">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -230,6 +232,29 @@
             <div id="popup-2" class="popup">
                 <h1><strong>En cours de traitement</strong></h1>
 
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
+
                 <button class="close">Fermer</button>
             </div>
 
@@ -240,8 +265,34 @@
             </div>
 
             <div id="popup3" class="popup">
+
                 <h1>Déploiement windows avec WDS</h1>
+
                 <p>En cours de traitement</p>
+
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
+
                 <button class="close">Fermer</button>
             </div>
 
@@ -264,17 +315,66 @@
                 <h1>Workspot</h1>
                 <p>Dans le cadre de ce projet, j'ai été chargé de mettre à niveau le contrôleur de domaine de l'entreprise FM Industry, passant de Windows Server 2012 à Windows Server 2022. Cette migration était essentielle pour répondre à l'augmentation des effectifs et garantir un environnement de travail performant et sécurisé.
                     L'objectif principal était de réaliser cette mise à niveau sans interruption de service, tout en conservant un seul contrôleur de domaine. Ce fut une expérience technique intense, qui m'a permis de renforcer mes compétences en administration système Windows Server et en gestion des rôles FSMO.</p>
+
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
+
                 <button class="close">Fermer</button>
             </div>
 
             <div class="Newpost_item__12345">
                 <h2 class="newpost_title__56789">Réorganisation de l'admin google</h2>
+
                 <p class="newpost_excerpt__abcd"></p>
+
                 <button class="btn-lire" data-popup="popup4">Lire plus</button>
             </div>
 
             <div id="popup4" class="popup">
                 <h1><strong>En cours de traitement</strong></h1>
+
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
 
                 <button class="close">Fermer</button>
             </div>
@@ -298,6 +398,30 @@
                 <h1>Transfert des rôles FSMO </h1>
                 <p>Dans le cadre de ce projet, j'ai été chargé de mettre à niveau le contrôleur de domaine de l'entreprise FM Industry, passant de Windows Server 2012 à Windows Server 2022. Cette migration était essentielle pour répondre à l'augmentation des effectifs et garantir un environnement de travail performant et sécurisé.
                     L'objectif principal était de réaliser cette mise à niveau sans interruption de service, tout en conservant un seul contrôleur de domaine. Ce fut une expérience technique intense, qui m'a permis de renforcer mes compétences en administration système Windows Server et en gestion des rôles FSMO.</p>
+
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
+
                 <button class="close">Fermer</button>
             </div>
 
@@ -309,6 +433,29 @@
 
             <div id="popup2" class="popup">
                 <h1><strong>En cours de traitement</strong></h1>
+
+                <div class="pdf-buttons">
+
+                    <button class="view-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
+                            <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z"/>
+                        </svg>
+                        Voir le PDF
+                    </button>
+
+                    <button class="download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger le PDF
+                    </button>
+
+                </div>
 
                 <button class="close">Fermer</button>
             </div>
