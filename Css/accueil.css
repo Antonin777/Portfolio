@@ -434,6 +434,12 @@ header li a{
     background-color: var(--white);
 }
 
+.Mes_projects3 {
+    display: block;
+    border: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 .Newpost_item__12345 {
     background-color: var(--black);

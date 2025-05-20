@@ -492,7 +492,7 @@
 
                 <div class="pdf-buttons">
 
-                    <button class="view-pdf">
+                    <button class="view-pdf" onclick="viewPDF('Asset/pdf/Compte rendu google admin.pdf')">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                              stroke-width="2" width="20" height="20">
                             <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.106-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/>
@@ -501,7 +501,7 @@
                         Voir le PDF
                     </button>
 
-                    <button class="download-pdf">
+                    <button class="download-pdf" onclick="downloadPDF('Asset/pdf/Compte rendu google admin.pdf')">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                              stroke-width="2" width="20" height="20">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -532,7 +532,7 @@
             </div>
 
             <div id="popup1" class="popup">
-                <h1>Transfert des rôles FSMO </h1>
+                <h1>Routage OSPF </h1>
                 <p>Dans le cadre de ce projet, j'ai été chargé de mettre à niveau le contrôleur de domaine de l'entreprise FM Industry, passant de Windows Server 2012 à Windows Server 2022. Cette migration était essentielle pour répondre à l'augmentation des effectifs et garantir un environnement de travail performant et sécurisé.
                     L'objectif principal était de réaliser cette mise à niveau sans interruption de service, tout en conservant un seul contrôleur de domaine. Ce fut une expérience technique intense, qui m'a permis de renforcer mes compétences en administration système Windows Server et en gestion des rôles FSMO.</p>
 
@@ -616,17 +616,26 @@
                <P> Pour commencer, parlons gaming, parlons hardware.
                 <br>Chez le fabricant NVIDIA, la technologie D'I.A utilisé s'appelle le DLSS
                 (Deep Learning Super Sampling), ce qui consiste à <strong>upscaler</strong> un rendu, c'est-à-dire augmenter le nombre d'images par seconde,
-                pour un rendu plus fluide </p>
+                pour un rendu plus fluide
+                dlss 3.5:
+                DLAA: antialiazing anti artefact
+                dlss frame regeneration: ray reconstruction
+
+                dlss 4.0
+                multiframe generation genere 3 images sur 4
+                   super resolution
+                   DLAA
+                </p>
 
             <h2>L'I.A dans la D.A.O :</h2>
                 En Dessin assisté par ordinateur L'I.A dite génerative est utilisé pour créer des images, des illustrations, des graphiques, des vidéos, etc.
                 Elle s'appuie sur des algorithmes de machine learning pour créer des images en fonction des données fournies.
 
             <h2>L'I.A dans l'espace :</h2>
-                Prédiction d'atterrissage basée sur un réseau neuronal :
-                les modèles d'IA prédisent le point d'atterrissage de la fusée en fonction des données de vitesse et d'altitude en temps réel, en tenant compte des conditions de vent et de surface.
-                Systèmes basés sur la vision :
-                les caméras et les capteurs installés sur la fusée envoient des images en temps réel à un système d'IA formé pour reconnaître les zones d'atterrissage sûres.
+               <p> Prédiction d'atterrissage basée sur un réseau neuronal (début des années 90) : <br>
+                Les modèles d'IA prédisent le point d'atterrissage de la fusée en fonction des données de vitesse et d'altitude en temps réel, en tenant compte des conditions de vent et de surface.</p>
+               <p> Systèmes basés sur la vision :<br>
+                Les caméras et les capteurs installés sur la fusée envoient des images en temps réel à un système d'IA formé pour reconnaître les zones d'atterrissage sûres.</p>
 
         </div>
 
